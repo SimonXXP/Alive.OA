@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +50,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModel.cs" />
+    <Compile Include="Migrations\201905091440234_init-database-AliveOA-2019-05-09.cs" />
+    <Compile Include="Migrations\201905091440234_init-database-AliveOA-2019-05-09.Designer.cs">
+      <DependentUpon>201905091440234_init-database-AliveOA-2019-05-09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905091442517_update-table-2019-05-09.cs" />
+    <Compile Include="Migrations\201905091442517_update-table-2019-05-09.Designer.cs">
+      <DependentUpon>201905091442517_update-table-2019-05-09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905091445078_update-table-2019-05-09-02.cs" />
+    <Compile Include="Migrations\201905091445078_update-table-2019-05-09-02.Designer.cs">
+      <DependentUpon>201905091445078_update-table-2019-05-09-02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905091440234_init-database-AliveOA-2019-05-09.resx">
+      <DependentUpon>201905091440234_init-database-AliveOA-2019-05-09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905091442517_update-table-2019-05-09.resx">
+      <DependentUpon>201905091442517_update-table-2019-05-09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905091445078_update-table-2019-05-09-02.resx">
+      <DependentUpon>201905091445078_update-table-2019-05-09-02.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alive.OA.API", "Alive.OA.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alive.OA.Portal", "Alive.OA.Portal\Alive.OA.Portal.csproj", "{E5C9BEDD-AE0B-42C4-89FA-D61B395ECF72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alive.OA.ADONetDAL", "Alive.OA.ADONetDAL\Alive.OA.ADONetDAL.csproj", "{92D0F778-B02E-480A-8FEE-373D8CA051C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E5C9BEDD-AE0B-42C4-89FA-D61B395ECF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5C9BEDD-AE0B-42C4-89FA-D61B395ECF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5C9BEDD-AE0B-42C4-89FA-D61B395ECF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D0F778-B02E-480A-8FEE-373D8CA051C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D0F778-B02E-480A-8FEE-373D8CA051C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D0F778-B02E-480A-8FEE-373D8CA051C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D0F778-B02E-480A-8FEE-373D8CA051C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
